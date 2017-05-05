@@ -1,0 +1,15 @@
+{
+  "name": "Tessel_project",
+  "version": "0.0.0",
+  "description": "Tessel project 2 ",
+  "main": "final.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": "www.github.com/tessel/t2-cli",
+  "keywords": [
+    "Tessel 2","Climate module"
+  ],
+  "license": "NTU",
+  "readme": "A bare bones Tessel 2 blinky script."
+}

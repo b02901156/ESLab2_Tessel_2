@@ -1,0 +1,16 @@
+<html>
+  <head>
+    <script src="/socket.io/socket.io.js"></script>
+  </head>
+  <body>
+	  <div id = "contentWrap">This is our socket.html file</div>
+    <script>
+		var socket = io.connect();
+        document.getElementById("contentWrap").innerHTML = 'Start :'; 
+        socket.on('dataStream', function(data){
+        document.getElementById("contentWrap").innerHTML = document.getElementById("contentWrap").innerHTML + ' <br>H: '+data.H +' Hcheck:' + data.Hcheck + ' D:' + data.D + ' Dcheck:' + data.Dcheck ;
+		});
+    </script>
+    
+  </body>
+</html>
